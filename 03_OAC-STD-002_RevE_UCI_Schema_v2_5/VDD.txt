@@ -1,0 +1,14 @@
+﻿####################################################################################
+##
+## DISCLAIMER: The discussion of non-federal entities, methods, products,
+## or services does not imply any endorsement by the United States Government,
+## the Department of Defense, or the Department of the Air Force.
+##
+## Distribution Statement A. Approved for public release: distribution is unlimited.
+##
+####################################################################################
+
+================================================================================
+UCI Schema Official Release 002.5.0 - 2026-01-22
+--------------------------------------------------------------------------------
+Initial public release

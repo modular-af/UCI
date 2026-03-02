@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:uci="https://www.vdl.afrl.af.mil/programs/oam/version" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.vdl.afrl.af.mil/programs/oam/version" elementFormDefault="qualified" attributeFormDefault="unqualified" version="002.5.0">
+	<xs:annotation>
+		<xs:documentation>DISTRIBUTION STATEMENTS
+
+DISCLAIMER: The discussion of non-federal entities, methods, products, or services does not imply any endorsement by the United States Government, the Department of Defense, or the Department of the Air Force.
+
+Distribution Statement A. Approved for public release: distribution is unlimited.
+		</xs:documentation>
+	</xs:annotation>
+	<xs:import namespace="https://www.vdl.afrl.af.mil/programs/oam" schemaLocation="UCI_MessageDefinitions_v2_5_0.xsd"/>
+	<xs:attribute name="version" type="uci:VersionType" uci:version="000.000.000.000"/>
+	<!--== START SUPPORTING SIMPLE TYPES  ==-->
+	<xs:simpleType name="VersionType" uci:version="000.001.000.000">
+		<xs:annotation>
+			<xs:documentation>Version information consists of four 3 digit fields (plus optional engineering field)
+                                    WWWe.XXXe.YYYe.ZZZe
+	                          where,
+	                                WWW - reflects the Direct Structural Impact change history to a message or type
+	                                XXX - reflects the Indirect Structural Impact change history to a message or type
+	                                YYY - reflects the Direct Optional Impact change history to a message or type
+	                                ZZZ - reflects the Indirect Optional Impact change history to a message or type
+	                                e   - reflects engineering level revision for each of the four levels (internal use only)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="15"/>
+			<xs:maxLength value="19"/>
+			<xs:pattern value="([0-9]{3}([a-z])?\.){3}[0-9]{3}([a-z])?"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--== END SUPPORTING SIMPLE TYPES  ==-->
+</xs:schema>

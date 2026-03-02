@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:uci="https://www.vdl.afrl.af.mil/programs/oam" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.vdl.afrl.af.mil/programs/oam" elementFormDefault="qualified" attributeFormDefault="unqualified" version="002.5.0">
+	<xs:annotation>
+		<xs:documentation>DISTRIBUTION STATEMENTS
+
+DISCLAIMER: The discussion of non-federal entities, methods, products, or services does not imply any endorsement by the United States Government, the Department of Defense, or the Department of the Air Force.
+
+Distribution Statement A. Approved for public release: distribution is unlimited.
+		</xs:documentation>
+	</xs:annotation>
+	<xs:include schemaLocation="../UCI_Schema_v2_5_0/UCI_SecurityMarkings_v2_5_0.xsd"/>
+	<xs:include schemaLocation="../UCI_Schema_v2_5_0/UCI_MessageDefinitions_v2_5_0.xsd"/>
+	<!--==  IMPORTANT NOTE!!! ==-->
+	<!--Templates below cover common structure for the messages to which they refer. Additions and modifications of these structures are to be expected for new applications. To promote consistency for structure and naming, some elements are present in these templates because they are commonly included in existing messages but are not required.-->
+	<!--==  START MESSAGES ==-->
+	<!--The elements defined in this section are templates for DataRequest-2 messages.  When using this schema, these messages are intended to be sent in whole; the schema was not designed for a given child element of a message to be sent independent of the message itself.-->
+	<xs:element name="MsgNameDataRequest" type="uci:MsgNameDataRequestMT">
+		<xs:annotation>
+			<xs:documentation>*INSTRUCTIONS: PROVIDE A DESCRIPTION OF THE MESSAGE IN THIS ANNOTATION. REMOVE INSTRUCTIONS AND NOTES FROM ANNOTATION.*</xs:documentation>
+			<xs:documentation>UCI_PRIMITIVE: DataRequest-2.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="MsgNameDataRequestStatus" type="uci:MsgNameDataRequestStatusMT">
+		<xs:annotation>
+			<xs:documentation>*INSTRUCTIONS: PROVIDE A DESCRIPTION OF THE MESSAGE IN THIS ANNOTATION. REMOVE INSTRUCTIONS AND NOTES FROM ANNOTATION.*</xs:documentation>
+			<xs:documentation>UCI_PRIMITIVE: DataRequest-2.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--==  END MESSAGES ==-->
+	<!--== START SUPPORTING COMPLEX TYPES  ==-->
+	<!--The complex types defined in this section are used in the messages defined above.  They are not intended to be sent independent of their host message(s).  They are listed alphabetically.  As indicated by their names, some can be thought of as falling into the following categories:-->
+	<!--==== ID TYPES ==-->
+	<!--These are identifiers of things referred to by the schema.  Uniqueness of identifiers will vary.  For example, it might be sufficient in some implementations for IDs to be unique for a given ID type but not necessarily unique across types.  It is left to implementers to determine ID uniqueness requirements.  These ID types are generally used in more than one instance in the messages defined above.  They were designed to be sent as a part of a message defined above; they are not intended to be sent independent of their parent message.-->
+	<!--====  MESSAGE DATA TYPEs (MDTs)==-->
+	<!--These complex types, one per UCI message and ending with a "MDT" suffix, specify the "data" content of a message.  That is, everything except the message header and object state (where applicable).-->
+	<!--====  MESSAGE TYPEs (MTs) ==-->
+	<!--These complex types correspond one-for-one to the top level UCI messages (root schema elements) and end with a "MT" suffix.-->
+	<xs:complexType name="MsgNameDataRequestMDT">
+		<xs:annotation>
+			<xs:documentation>See annotations in child elements and associated global element (message) for further details.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="uci:RequestBaseType">
+				<xs:sequence>
+					<xs:element name="AnyRequiredMessageUniqueFieldsHere">
+						<xs:annotation>
+							<xs:documentation>*INSTRUCTIONS: ADD YOUR MESSAGE SPECIFIC REQUIRED FIELDS IN THIS xs:sequence STARTING HERE. REMOVE THIS EXAMPLE ELEMENT*</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="AnyOptionalMessageUniqueFieldsHere" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>*INSTRUCTIONS: ADD YOUR MESSAGE SPECIFIC OPTIONAL FIELDS IN THIS xs:sequence STARTING HERE. REMOVE THIS EXAMPLE ELEMENT*</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="MsgNameDataRequestMT">
+		<xs:annotation>
+			<xs:documentation>See the associated global element (message) annotation for further details.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="uci:MessageType">
+				<xs:sequence>
+					<xs:element name="MessageData" type="uci:MsgNameDataRequestMDT">
+						<xs:annotation>
+							<xs:documentation>See annotations in child elements for details.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="MsgNameDataRequestStatusMDT">
+		<xs:annotation>
+			<xs:documentation>See annotations in child elements and associated global element (message) for further details.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="uci:RequestStatusBaseType">
+				<xs:sequence>
+					<xs:element name="AnyRequiredMessageUniqueFieldsHere">
+						<xs:annotation>
+							<xs:documentation>*INSTRUCTIONS: ADD YOUR MESSAGE SPECIFIC REQUIRED FIELDS IN THIS xs:sequence STARTING HERE. REMOVE THIS EXAMPLE ELEMENT*</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="AnyOptionalMessageUniqueFieldsHere" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>*INSTRUCTIONS: ADD YOUR MESSAGE SPECIFIC OPTIONAL FIELDS IN THIS xs:sequence STARTING HERE. REMOVE THIS EXAMPLE ELEMENT*</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="MsgNameDataRequestStatusMT">
+		<xs:annotation>
+			<xs:documentation>*INSTRUCTIONS: REPLACE "MsgName" WITH YOUR MESSAGE NAME. POPULATE MsgNameMDT WITH MESSAGE FIELDS. DO NOT CHANGE THE ANNOTATION, BELOW.  DO NOT ALTER MessageType (extension). REMOVE INSTRUCTION FROM ANNOTATION.*
+
+See the associated global element (message) annotation for further details.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="uci:MessageType">
+				<xs:sequence>
+					<xs:element name="MessageData" type="uci:MsgNameDataRequestStatusMDT">
+						<xs:annotation>
+							<xs:documentation>See annotations in child elements for details.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!--== END SUPPORTING COMPLEX TYPES  ==-->
+</xs:schema>
