@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/badge/Version-2.5-2f5597)]() [![Released](https://img.shields.io/badge/Released-January%2022%2C%202026-blue)]() [![Governance](https://img.shields.io/badge/Governed%20by-OACWG-1e3a8a)]() [![License](https://img.shields.io/badge/License-Government%20Owned-green)]()
 
-Welcome to the official unclassified repository for the Universal Command and Control (C2) Interface (UCI) Standard, a government‑owned, non‑proprietary open architecture specification enabling mission‑level machine‑to‑machine C2 across heterogeneous systems. This repository contains the complete UCI Definition & Documentation (D&D) set for UCI Version 2.5, released 22 January 2026.
+Welcome to the unclassified repository for the Universal Command and Control (C2) Interface (UCI) Standard, a government‑owned, non‑proprietary open architecture specification enabling mission‑level machine‑to‑machine C2 across heterogeneous systems. This repository contains the complete UCI Definition & Documentation (D&D) set for UCI Version 2.5, released 22 January 2026.
 
 The UCI standard provides a common message definition for performing mission operations and enables C2 coordination across sensors, vehicles, data products, and software components.
 
