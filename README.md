@@ -7,7 +7,7 @@ Welcome to the unclassified repository for the Universal Command and Control (C2
 The UCI standard provides a common message definition for performing mission operations and enables C2 coordination across sensors, vehicles, data products, and software components.
 
 > [!NOTE]
-> This repository focuses exclusively on the technical standard and documentation. Example "hello world" software implementation code is forthcoming.
+> The United States Air Force is experimenting with releasing unclassified standards on <https://gitlab.com/modular-af/> and <https://github.com/modular-af>.  We welcome [constructive feedback](mailto:aflcmc.ase.architectures@us.af.mil) on how we can improve this approach.  These repositories currently focus exclusively on the technical standard and documentation. Example "hello world" software is forthcoming.
 
 ## 🚀 Overview
 
